@@ -1,0 +1,38 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-weight: 500;
+}
+
+.error {
+  color:red;
+}
+#container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#container label {
+  font-size: 25px;
+  margin-right: 10px;
+}
+#container input {
+  min-width: 50%;
+  height: 30px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.blogpost {
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 30px;
+}
+.hide{
+  display: none;
+}

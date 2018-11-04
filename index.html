@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Labo 5</title>
+</head>
+
+<body>
+    <div id="login_container" class="">
+            <div>
+                    <h1>Sign up</h1>
+                    <form action="">
+                        <label for="signup_email">Email</label>
+                        <input type="email" name="signup_email" id="signup_email">
+                        <label for="signup_password">Password</label>
+                        <input type="password" name="signup_password" id="signup_password">
+                        <button type="submit" id="btn_signup">Sign Up</button>
+                    </form>
+                    <p class="error" id="signup_error"></p>
+                </div>
+                <div>
+                    <h1>Login</h1>
+                    <form action="">
+                        <label for="login_email">Email</label>
+                        <input type="email" name="login_email" id="login_email">
+                        <label for="login_password">Password</label>
+                        <input type="password" name="login_password" id="login_password">
+                        <button type="submit" id="btn_login">Login</button>
+                    </form>
+                    <p class="error" id="login_error"></p>
+                </div>
+    </div>
+    
+    <div id="user_info"></div>
+    <div id='container' >
+        <div id='blogposts'></div>
+        <div id='editor' class="hide">
+          <h1>New blogpost</h1>
+          <form action="">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title"><br>
+            <textarea name="editor1" id="editor1" rows="10" cols="80">
+              Blogpost content goes here!
+            </textarea><br>
+            <button type="submit" id="btn_publish">Publish post</button>
+          </form>
+          <p class="error" id="errors"></p>
+        </div>
+      </div>
+<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDRyDUCTa6QeH-NJhi4vLwUr6yevNf0EKk",
+    authDomain: "labo5-e7130.firebaseapp.com",
+    databaseURL: "https://labo5-e7130.firebaseio.com",
+    projectId: "labo5-e7130",
+    storageBucket: "labo5-e7130.appspot.com",
+    messagingSenderId: "257735844598"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+<script src="js/code.js"></script>
+</body>
+
+</html>
